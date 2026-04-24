@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CG학과 포트폴리오 현황</title>
+  <style>
+    @font-face {
+      font-family: 'GmarketSans';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+      font-weight: 300;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'GmarketSans';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+      font-weight: 500;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'GmarketSans';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+      font-weight: 700;
+      font-display: swap;
+    }
+    :root {
+      --bg: #f4f2ea;
+      --surface: rgba(255,255,255,0.84);
+      --line: rgba(21,21,21,0.1);
+      --ink: #151515;
+      --muted: #666666;
+      --accent: #245f45;
+      --accent-soft: rgba(36,95,69,0.12);
+      --shadow: 0 22px 56px rgba(21,21,21,0.08);
+      --max: 980px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'GmarketSans', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(36,95,69,0.14), transparent 30%),
+        linear-gradient(180deg, #f8f5ee 0%, #f1ece4 100%);
+    }
+    a { color: inherit; text-decoration: none; }
+    .shell { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+    .topbar { padding: 28px 0 14px; }
+    .crumb { color: var(--muted); font-size: 0.9rem; }
+    .hero, .card, .panel, .link-card {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .hero { padding: 34px; }
+    .eyebrow {
+      display: inline-flex;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.8rem;
+    }
+    h1 {
+      margin: 16px 0 12px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+    .lead { color: var(--muted); max-width: 720px; line-height: 1.7; }
+    .section { padding-top: 24px; }
+    .stats, .grid { display: grid; gap: 18px; }
+    .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .card { padding: 22px; }
+    .card span { display: block; color: var(--muted); margin-bottom: 8px; font-size: 0.9rem; }
+    .card strong { font-size: 1.7rem; letter-spacing: -0.03em; }
+    .grid { grid-template-columns: 1fr; }
+    .panel { padding: 24px; }
+    .panel h2 { margin: 0 0 12px; font-size: 1.35rem; letter-spacing: -0.03em; }
+    .panel p, .panel li { color: var(--muted); line-height: 1.7; }
+    .panel ul { margin: 0; padding-left: 18px; }
+    .link-card { overflow: hidden; }
+    .thumb {
+      min-height: 156px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #fff;
+      background: linear-gradient(135deg, rgba(36,95,69,0.96), rgba(22,43,32,0.94));
+    }
+    .thumb small { font-size: 0.78rem; opacity: 0.82; }
+    .thumb strong { font-size: 1.6rem; letter-spacing: -0.03em; }
+    .link-body { padding: 18px; }
+    .link-body h3 { margin: 0 0 8px; font-size: 1.05rem; }
+    .link-body p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.92rem;
+    }
+    .button.ghost { background: rgba(21,21,21,0.06); color: var(--ink); }
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: 1fr; }
+      .hero { padding: 26px; }
+    }
+    @media print {
+      body { background: #fff; }
+      .hero, .card, .panel, .link-card { box-shadow: none; background: #fff; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="topbar">
+      <a class="crumb" href="../index.html">메인으로 돌아가기</a>
+    </div>
+    <section class="hero">
+      <div class="eyebrow">CG학과</div>
+      <h1>수량은 1개지만<br>운영 오류 체크가 필요한 페이지</h1>
+      <p class="lead">
+        전달 기준 업로드는 1개이며, 홈페이지에는 게시되어 있지만 지점 정보가 빠져 있는 것으로 보이는 오류 상황이 함께 확인되었습니다.
+        Best / Good 작품도 1개가 확인됩니다.
+      </p>
+      <div class="actions">
+        <a class="button" href="#portfolio-link">대표 링크 보기</a>
+        <a class="button ghost" href="../index.html">전체 현황 보기</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="stats">
+        <article class="card">
+          <span>총 업로드</span>
+          <strong>1개</strong>
+        </article>
+        <article class="card">
+          <span>Best / Good</span>
+          <strong>1개</strong>
+        </article>
+        <article class="card">
+          <span>특이사항</span>
+          <strong>지점 표기 오류</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <article class="panel">
+          <h2>운영 요약</h2>
+          <ul>
+            <li>포트폴리오 업로드 수량은 총 1개</li>
+            <li>홈페이지 게시는 되어 있으나 지점이 빠져 있는 상황으로 전달됨</li>
+            <li>성과 지표로 활용 가능한 Best / Good 링크 1건 존재</li>
+          </ul>
+        </article>
+        <article class="panel" id="portfolio-link">
+          <h2>대표 링크</h2>
+          <a class="link-card" href="https://sbsart.com/portfolio/portfolio_view.asp?txtCurPage=1&amp;txtContentSeq=18725&amp;selMater=VFX" target="_blank" rel="noreferrer">
+            <div class="thumb">
+              <small>Best / Good</small>
+              <strong>#18725</strong>
+            </div>
+            <div class="link-body">
+              <h3>CG학과 대표 작품</h3>
+              <p>홈페이지 게재 및 지점 표기 오류 확인용 링크</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
