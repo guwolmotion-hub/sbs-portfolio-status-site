@@ -17,14 +17,14 @@
         <article class="hero-copy">
           <div>
             <div class="eyebrow">2026.04 기준 운영 현황</div>
-            <h1>메인페이지와 상세페이지를<br>같은 축으로 정렬한 포트폴리오 대시보드</h1>
+            <h1>학과별 페이지로 바로 이동하는<br>포트폴리오 현황 메인</h1>
             <p class="lead">
-              영상모션학과, 아트웍학과, CG학과, 시각편집학과, 인테리어학과의 업로드 수량과 누락, 삭제, 첫페이지 노출,
-              Best / Good 현황을 1920 x 1080 화면에서도 안정적으로 보이도록 중앙 박스형 레이아웃으로 다시 정리했습니다.
+              메인 페이지에는 전체 현황 요약과 학과별 이동 버튼만 두고,
+              세부 업로드 이력과 링크 작품 정보는 각 상세 페이지에서 확인할 수 있도록 분리했습니다.
             </p>
           </div>
           <div class="action-row">
-            <a class="btn primary" href="#departments">학과별 보기</a>
+            <a class="btn primary" href="#departments">학과별 이동</a>
             <a class="btn secondary" href="#overview">전체 요약</a>
           </div>
         </article>
@@ -79,102 +79,27 @@
       <section class="section" id="departments">
         <div class="section-head">
           <div>
-            <h2>학과별 페이지 이동</h2>
-            <p class="section-note">모든 카드 내부 여백과 버튼 위치를 통일해 한 줄 기준이 맞도록 정리했습니다.</p>
+            <h2>학과별 이동 버튼</h2>
+            <p class="section-note">메인에는 버튼만 두고, 상세 내용은 각 페이지로 분리했습니다.</p>
           </div>
         </div>
 
-        <div class="dept-grid">
-          <article class="dept-card" style="--card-accent:#0d5c63;">
-            <div>
-              <h3>영상모션학과</h3>
-              <p>2022.02.07 첫 업로드 이후 월 1개씩 유지. 2026년 2월, 3월만 인트라넷 문제로 누락되었습니다.</p>
-            </div>
-            <div class="meta-pills">
-              <span class="pill">총 47개</span>
-              <span class="pill">누락 2개</span>
-              <span class="pill">삭제 0개</span>
-              <span class="pill">Best / Good 2개</span>
-              <span class="pill">첫페이지 2개</span>
-            </div>
-            <div></div>
-            <div class="action-row">
-              <a class="btn primary" href="./departments/motion.html">상세 페이지</a>
-            </div>
+        <div class="nav-grid">
+          <article class="nav-card">
+            <a class="nav-link" href="./departments/motion.html">영상모션학과</a>
           </article>
-
-          <article class="dept-card" style="--card-accent:#b86c34;">
-            <div>
-              <h3>아트웍학과</h3>
-              <p>2021.12.22 첫 업로드 이후 월 1개씩 업로드. 게임계열과 중복된 포트폴리오 3개가 삭제되었습니다.</p>
-            </div>
-            <div class="meta-pills">
-              <span class="pill">총 34개</span>
-              <span class="pill">누락 0개</span>
-              <span class="pill">삭제 3개</span>
-              <span class="pill">첫페이지 1개</span>
-            </div>
-            <div></div>
-            <div class="action-row">
-              <a class="btn primary" href="./departments/artwork.html">상세 페이지</a>
-            </div>
+          <article class="nav-card">
+            <a class="nav-link" href="./departments/artwork.html">아트웍학과</a>
           </article>
-
-          <article class="dept-card" style="--card-accent:#245f45;">
-            <div>
-              <h3>CG학과</h3>
-              <p>업로드는 1개이며, 홈페이지에는 게시되어 있으나 지점 정보가 빠진 오류 상황으로 전달되었습니다.</p>
-            </div>
-            <div class="meta-pills">
-              <span class="pill">총 1개</span>
-              <span class="pill">Best / Good 1개</span>
-              <span class="pill">지점 표기 오류</span>
-            </div>
-            <div></div>
-            <div class="action-row">
-              <a class="btn primary" href="./departments/cg.html">상세 페이지</a>
-            </div>
+          <article class="nav-card">
+            <a class="nav-link" href="./departments/cg.html">CG학과</a>
           </article>
-
-          <article class="dept-card" style="--card-accent:#3d5170;">
-            <div>
-              <h3>시각편집학과</h3>
-              <p>2021.12.23 첫 업로드 이후 월 1개씩 업로드, 2024년에는 월 2개씩 업로드했습니다. 누락과 삭제는 없습니다.</p>
-            </div>
-            <div class="meta-pills">
-              <span class="pill">총 48개</span>
-              <span class="pill">누락 0개</span>
-              <span class="pill">삭제 0개</span>
-              <span class="pill">2024년 월 2개</span>
-            </div>
-            <div></div>
-            <div class="action-row">
-              <a class="btn primary" href="./departments/visual-editing.html">상세 페이지</a>
-            </div>
+          <article class="nav-card">
+            <a class="nav-link" href="./departments/visual-editing.html">시각편집학과</a>
           </article>
-
-          <article class="dept-card" style="--card-accent:#6c4f34;">
-            <div>
-              <h3>인테리어학과</h3>
-              <p>2022.10.11 첫 업로드 이후 강사 변경 후 월 1개씩 업로드. 누락 2개와 삭제 1개 이력이 있습니다.</p>
-            </div>
-            <div class="meta-pills">
-              <span class="pill">총 27개</span>
-              <span class="pill">누락 2개</span>
-              <span class="pill">삭제 1개</span>
-              <span class="pill">첫페이지 2개</span>
-            </div>
-            <div></div>
-            <div class="action-row">
-              <a class="btn primary" href="./departments/interior.html">상세 페이지</a>
-            </div>
+          <article class="nav-card">
+            <a class="nav-link" href="./departments/interior.html">인테리어학과</a>
           </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="notice">
-          공개 배포 페이지에는 관리자 계정 정보와 비밀번호를 포함하지 않았습니다. 외부 공개용 사이트에는 포트폴리오 현황과 참고 링크만 정리하는 방식이 안전합니다.
         </div>
       </section>
 

@@ -268,7 +268,8 @@ h3 {
 .dept-grid,
 .content-grid,
 .link-grid,
-.stack-grid {
+.stack-grid,
+.nav-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -475,6 +476,44 @@ h3 {
   text-align: right;
 }
 
+.nav-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.nav-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: var(--surface);
+  box-shadow: 0 14px 36px rgba(18, 18, 18, 0.05);
+  padding: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 44px rgba(18, 18, 18, 0.08);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 84px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.08), rgba(var(--accent-rgb), 0.16));
+  color: var(--ink);
+  font-size: 1.14rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
 @media (max-width: 1400px) {
   .page-shell {
     width: min(calc(100% - 48px), 1320px);
@@ -508,6 +547,7 @@ h3 {
   .content-grid,
   .link-grid,
   .stack-grid,
+  .nav-grid,
   .sub-hero-side {
     grid-template-columns: 1fr;
   }
