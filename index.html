@@ -4,103 +4,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SBS아카데미 포트폴리오 업로드 현황</title>
-  <link rel="stylesheet" href="./assets/site.css?v=cobalt-20260424">
+  <link rel="stylesheet" href="./assets/site.css?v=2026-04-24">
 </head>
-<body class="landing">
-  <main class="page-shell">
-    <div class="page-frame">
-      <div class="topbar">
-        <div class="crumb">SBS Portfolio Status</div>
-        <nav class="topnav" aria-label="메인 섹션 이동">
-          <a href="#overview">요약</a>
-          <a href="#departments">학과</a>
-        </nav>
-      </div>
+<body>
+<div class="layout">
 
-      <section class="hero-grid">
-        <article class="hero-copy">
-          <div>
-            <div class="eyebrow">2026.04 기준 운영 현황</div>
-            <h1>학과별 포트폴리오<br><span>업로드 현황</span></h1>
-            <p class="lead">
-              메인에는 총 요약과 학과별 이동 버튼만 배치했습니다.
-              세부 업로드 이력과 작품 링크는 각 상세 페이지에서 확인할 수 있습니다.
-            </p>
-          </div>
-        </article>
-
-        <aside class="hero-side" aria-label="대표 수치">
-          <div class="hero-stat compact">
-            <strong>157개</strong>
-            <span>전달 기준 총 업로드 집계</span>
-          </div>
-          <div class="hero-stat compact">
-            <strong>5개 학과</strong>
-            <span>학과별 상세 페이지 이동 구성</span>
-          </div>
-        </aside>
-      </section>
-
-      <section class="section" id="overview">
-        <div class="section-head">
-          <div>
-            <h2>전체 요약</h2>
-            <p class="section-note">핵심 수치만 빠르게 확인할 수 있게 정리했습니다.</p>
-          </div>
-        </div>
-        <div class="summary-grid">
-          <article class="surface-card metric-card">
-            <div class="stat-label">최다 업로드</div>
-            <div class="metric-value">48개</div>
-            <p>시각편집학과</p>
-          </article>
-          <article class="surface-card metric-card">
-            <div class="stat-label">Best / Good 최다</div>
-            <div class="metric-value">2개</div>
-            <p>영상모션학과</p>
-          </article>
-          <article class="surface-card metric-card">
-            <div class="stat-label">삭제 이슈</div>
-            <div class="metric-value">4개</div>
-            <p>아트웍 3개, 인테리어 1개</p>
-          </article>
-          <article class="surface-card metric-card">
-            <div class="stat-label">특이 상황</div>
-            <div class="metric-value">1건</div>
-            <p>CG학과 지점 표기 오류</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="departments">
-        <div class="section-head">
-          <div>
-            <h2>학과별 이동</h2>
-            <p class="section-note">각 버튼을 누르면 학과별 상세 페이지로 이동합니다.</p>
-          </div>
-        </div>
-
-        <div class="nav-grid">
-          <article class="nav-card">
-            <a class="nav-link" href="./departments/motion.html">영상모션학과</a>
-          </article>
-          <article class="nav-card">
-            <a class="nav-link" href="./departments/artwork.html">아트웍학과</a>
-          </article>
-          <article class="nav-card">
-            <a class="nav-link" href="./departments/cg.html">CG학과</a>
-          </article>
-          <article class="nav-card">
-            <a class="nav-link" href="./departments/visual-editing.html">시각편집학과</a>
-          </article>
-          <article class="nav-card">
-            <a class="nav-link" href="./departments/interior.html">인테리어학과</a>
-          </article>
-        </div>
-      </section>
-
-      <div class="page-footer">SBS아카데미 포트폴리오 업로드 현황 페이지</div>
+  <!-- ── sidebar ── -->
+  <aside class="sidebar">
+    <div class="sidebar-service">SBS Academy</div>
+    <div class="sidebar-brand">
+      <h2>포트폴리오<br>업로드 현황</h2>
+      <p>Portfolio Status</p>
     </div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-nav-label">메뉴</div>
+      <a href="#overview" class="active">
+        <span class="nav-dot"></span>
+        전체 요약
+      </a>
+      <a href="#departments">
+        <span class="nav-dot"></span>
+        학과별 이동
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-badge">2026.04 기준</div><br>
+      구월지점 운영 현황<br>포트폴리오 업로드 통계
+    </div>
+  </aside>
+
+  <!-- ── main ── -->
+  <main class="content-area">
+
+    <!-- topbar -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="topbar-dot"></div>
+        <span class="topbar-label">SBS아카데미 구월지점</span>
+      </div>
+      <span class="topbar-date">2026년 4월 기준 운영 현황</span>
+    </div>
+
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="hero-eyebrow">Portfolio Upload Status</div>
+        <h1>SBS아카데미<br><em>포트폴리오 업로드 현황</em></h1>
+        <p class="hero-lead">
+          각 학과의 세부 현황과 포트폴리오 링크를 확인할 수 있습니다.<br>
+          아래 학과 버튼을 클릭하면 해당 학과의 업로드 이력과 주요 작품 링크로 이동합니다.
+        </p>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat-card">
+          <strong>157개</strong>
+          <span>전체<br>업로드 수</span>
+        </div>
+        <div class="hero-stat-card">
+          <strong>5개</strong>
+          <span>운영 중인<br>학과 수</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- overview metrics -->
+    <section id="overview">
+      <div class="sec-title">
+        <h2>전체 요약</h2>
+        <p>학과 전체의 업로드 현황을 한눈에 확인할 수 있습니다.</p>
+      </div>
+      <div class="metrics-row">
+        <div class="metric-card">
+          <div class="metric-label">최다 업로드</div>
+          <div class="metric-value">48개</div>
+          <div class="metric-sub">시각편집학과</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Best / Good 최다</div>
+          <div class="metric-value">2개</div>
+          <div class="metric-sub">아트웍학과</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">삭제 이슈</div>
+          <div class="metric-value">4개</div>
+          <div class="metric-sub">포트폴리오 3개, 인테리어 1개</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">특수 상황</div>
+          <div class="metric-value">1건</div>
+          <div class="metric-sub">CG학과 이름 표기 문제</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- department nav -->
+    <section id="departments">
+      <div class="sec-title">
+        <h2>학과별 이동</h2>
+        <p>각 버튼을 클릭하면 해당 학과의 세부 현황 페이지로 이동합니다.</p>
+      </div>
+      <div class="dept-row">
+        <a class="dept-link" href="./departments/motion.html">
+          <div class="dept-icon-wrap">🎬</div>
+          <span class="dept-link-name">영상모션학과</span>
+          <span class="dept-link-arrow">→</span>
+        </a>
+        <a class="dept-link" href="./departments/artwork.html">
+          <div class="dept-icon-wrap">🎨</div>
+          <span class="dept-link-name">아트웍학과</span>
+          <span class="dept-link-arrow">→</span>
+        </a>
+        <a class="dept-link" href="./departments/cg.html">
+          <div class="dept-icon-wrap">💻</div>
+          <span class="dept-link-name">CG학과</span>
+          <span class="dept-link-arrow">→</span>
+        </a>
+        <a class="dept-link" href="./departments/visual-editing.html">
+          <div class="dept-icon-wrap">✏️</div>
+          <span class="dept-link-name">시각편집학과</span>
+          <span class="dept-link-arrow">→</span>
+        </a>
+        <a class="dept-link" href="./departments/interior.html">
+          <div class="dept-icon-wrap">🏠</div>
+          <span class="dept-link-name">인테리어학과</span>
+          <span class="dept-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer">
+      <span>SBS아카데미 구월지점 · 포트폴리오 업로드 현황 대시보드</span>
+      <span>2026년 4월 기준</span>
+    </footer>
+
   </main>
+</div>
 </body>
 </html>
