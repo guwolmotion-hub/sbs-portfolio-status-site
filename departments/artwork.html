@@ -4,216 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>아트웍학과 포트폴리오 현황</title>
-  <style>
-    @font-face {
-      font-family: 'GmarketSans';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
-      font-weight: 300;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'GmarketSans';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-      font-weight: 500;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'GmarketSans';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-      font-weight: 700;
-      font-display: swap;
-    }
-    :root {
-      --bg: #f6f2ea;
-      --surface: rgba(255,255,255,0.84);
-      --line: rgba(21,21,21,0.1);
-      --ink: #171717;
-      --muted: #666666;
-      --accent: #b86c34;
-      --accent-soft: rgba(184,108,52,0.12);
-      --shadow: 0 22px 56px rgba(21,21,21,0.08);
-      --max: 1080px;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'GmarketSans', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at top left, rgba(184,108,52,0.15), transparent 30%),
-        linear-gradient(180deg, #faf5ee 0%, #f3eee7 100%);
-    }
-    a { color: inherit; text-decoration: none; }
-    .shell { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
-    .topbar { padding: 28px 0 14px; }
-    .crumb { color: var(--muted); font-size: 0.9rem; }
-    .hero, .card, .panel, .link-card {
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      background: var(--surface);
-      box-shadow: var(--shadow);
-    }
-    .hero { padding: 34px; }
-    .eyebrow {
-      display: inline-flex;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 0.8rem;
-    }
-    h1 {
-      margin: 16px 0 12px;
-      font-size: clamp(2rem, 4vw, 3.1rem);
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-    }
-    .lead { color: var(--muted); max-width: 760px; line-height: 1.7; }
-    .section { padding-top: 24px; }
-    .stats, .grid, .link-grid { display: grid; gap: 18px; }
-    .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .card { padding: 22px; }
-    .card span { display: block; color: var(--muted); margin-bottom: 8px; font-size: 0.9rem; }
-    .card strong { font-size: 1.7rem; letter-spacing: -0.03em; }
-    .grid, .link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .panel { padding: 24px; }
-    .panel h2 { margin: 0 0 12px; font-size: 1.35rem; letter-spacing: -0.03em; }
-    .panel p, .panel li { color: var(--muted); line-height: 1.7; }
-    .panel ul { margin: 0; padding-left: 18px; }
-    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 0 18px;
-      border-radius: 999px;
-      background: var(--accent);
-      color: #fff;
-      font-size: 0.92rem;
-    }
-    .button.ghost { background: rgba(21,21,21,0.06); color: var(--ink); }
-    .link-card { overflow: hidden; transition: transform 0.2s ease; }
-    .link-card:hover { transform: translateY(-3px); }
-    .thumb {
-      min-height: 148px;
-      padding: 18px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      color: #fff;
-      background: linear-gradient(135deg, rgba(184,108,52,0.96), rgba(77,41,17,0.94));
-    }
-    .thumb small { font-size: 0.78rem; opacity: 0.84; }
-    .thumb strong { font-size: 1.55rem; letter-spacing: -0.03em; }
-    .link-body { padding: 18px; }
-    .link-body h3 { margin: 0 0 8px; font-size: 1.05rem; }
-    .link-body p { margin: 0; color: var(--muted); font-size: 0.92rem; }
-    @media (max-width: 900px) {
-      .stats, .grid, .link-grid { grid-template-columns: 1fr; }
-      .hero { padding: 26px; }
-    }
-    @media print {
-      body { background: #fff; }
-      .hero, .card, .panel, .link-card { box-shadow: none; background: #fff; }
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body>
-  <div class="shell">
-    <div class="topbar">
-      <a class="crumb" href="../index.html">메인으로 돌아가기</a>
+<body style="--accent:#b86c34; --accent-rgb:184,108,52; --accent-deep:#6e3f19;">
+  <main class="page-shell">
+    <div class="page-frame">
+      <div class="topbar">
+        <a class="crumb" href="../index.html">메인으로 돌아가기</a>
+      </div>
+
+      <section class="sub-hero-grid">
+        <article class="hero-copy sub-hero-copy">
+          <div>
+            <div class="eyebrow">아트웍학과</div>
+            <h1>업로드 이력은 꾸준했고<br>중복 포트폴리오만 정리된 케이스</h1>
+            <p class="lead">
+              2021년 12월 22일 첫 업로드 이후 월 1개씩 업로드가 이어졌습니다.
+              게임원화와 같은 포트폴리오로 게임계열과 겹친 작품 3개는 중복 이슈로 삭제되었습니다.
+            </p>
+          </div>
+          <div class="action-row">
+            <a class="btn primary" href="#portfolio-links">관련 링크 보기</a>
+            <a class="btn secondary" href="../index.html">전체 현황</a>
+          </div>
+        </article>
+
+        <aside class="sub-hero-side">
+          <div class="sub-metric">
+            <span class="stat-label">총 업로드</span>
+            <strong>34개</strong>
+          </div>
+          <div class="sub-metric">
+            <span class="stat-label">첫 업로드</span>
+            <strong>2021.12.22</strong>
+          </div>
+          <div class="sub-metric">
+            <span class="stat-label">삭제</span>
+            <strong>3개</strong>
+          </div>
+          <div class="sub-metric">
+            <span class="stat-label">첫페이지</span>
+            <strong>1개</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="content-grid">
+          <article class="surface-card">
+            <h2>운영 요약</h2>
+            <ul class="list">
+              <li>2021.12.22 첫 업로드 이후 월 1개씩 업로드</li>
+              <li>누락 이력은 전달 내용 기준 없음</li>
+              <li>게임계열과 겹친 동일 포트폴리오 3개 삭제</li>
+              <li>첫페이지 노출 작품 1개 확인</li>
+            </ul>
+          </article>
+          <article class="surface-card">
+            <h2>체크 포인트</h2>
+            <ul class="list">
+              <li>삭제 사유가 운영 실수보다 계열 간 중복 정리에 가까움</li>
+              <li>사용자 전달 링크 3건을 한 화면에서 균형 있게 배치</li>
+              <li>첫 링크는 첫페이지 노출 작품으로 구분해 정리</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="portfolio-links">
+        <div class="section-head">
+          <div>
+            <h2>관련 링크</h2>
+            <p class="section-note">첫페이지 노출 1건과 참고 링크 2건을 동일 카드 폭으로 정리했습니다.</p>
+          </div>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="https://sbsart.com/portfolio/portfolio_view.asp?txtCurPage=1&amp;txtContentSeq=20054&amp;selMater=artwork" target="_blank" rel="noreferrer">
+            <div class="link-thumb">
+              <small>첫페이지 노출</small>
+              <strong>#20054</strong>
+            </div>
+            <div class="link-body">
+              <h3>첫페이지 작품</h3>
+              <p>사용자 전달 기준 첫페이지 노출 링크</p>
+            </div>
+          </a>
+
+          <a class="link-card" href="https://sbsart.com/portfolio/portfolio_view.asp?txtCurPage=2&amp;txtContentSeq=20580&amp;selMater=artwork" target="_blank" rel="noreferrer">
+            <div class="link-thumb">
+              <small>관련 링크</small>
+              <strong>#20580</strong>
+            </div>
+            <div class="link-body">
+              <h3>관련 포트폴리오 01</h3>
+              <p>페이지 2 기준 참고 링크</p>
+            </div>
+          </a>
+
+          <a class="link-card" href="https://sbsart.com/portfolio/portfolio_view.asp?txtCurPage=2&amp;txtContentSeq=18042&amp;selMater=artwork" target="_blank" rel="noreferrer">
+            <div class="link-thumb">
+              <small>관련 링크</small>
+              <strong>#18042</strong>
+            </div>
+            <div class="link-body">
+              <h3>관련 포트폴리오 02</h3>
+              <p>페이지 2 기준 참고 링크</p>
+            </div>
+          </a>
+        </div>
+      </section>
     </div>
-    <section class="hero">
-      <div class="eyebrow">아트웍학과</div>
-      <h1>업로드는 꾸준했고,<br>중복 포트폴리오만 정리된 케이스</h1>
-      <p class="lead">
-        2021년 12월 22일 첫 업로드 이후 월 1개씩 업로드가 이어졌습니다.
-        게임원화와 동일 포트폴리오로 겹친 작품 3개는 게임계열과의 중복 이슈로 삭제되었습니다.
-      </p>
-      <div class="actions">
-        <a class="button" href="#portfolio-links">관련 링크 보기</a>
-        <a class="button ghost" href="../index.html">전체 현황 보기</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="stats">
-        <article class="card">
-          <span>총 업로드</span>
-          <strong>34개</strong>
-        </article>
-        <article class="card">
-          <span>첫 업로드</span>
-          <strong>2021.12.22</strong>
-        </article>
-        <article class="card">
-          <span>삭제</span>
-          <strong>3개</strong>
-        </article>
-        <article class="card">
-          <span>첫페이지</span>
-          <strong>1개</strong>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="grid">
-        <article class="panel">
-          <h2>운영 요약</h2>
-          <ul>
-            <li>2021.12.22 첫 업로드 이후 월 1개씩 꾸준히 업로드</li>
-            <li>누락 이력은 전달 내용 기준 확인되지 않음</li>
-            <li>게임원화와 동일한 포트폴리오가 게임계열과 겹쳐 3개 삭제</li>
-            <li>첫페이지 노출 작품은 1개로 정리</li>
-          </ul>
-        </article>
-        <article class="panel">
-          <h2>체크 포인트</h2>
-          <ul>
-            <li>삭제 사유가 단순 운영 오류가 아닌 계열 간 중복 정리라는 점이 핵심</li>
-            <li>사용자 전달 링크는 총 3건이며, 첫 링크를 첫페이지 노출 링크로 우선 배치</li>
-            <li>나머지 2건은 관련 참고 링크로 정리</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="portfolio-links">
-      <div class="link-grid">
-        <a class="link-card" href="https://sbsart.com/portfolio/portfolio_view.asp?txtCurPage=1&amp;txtContentSeq=20054&amp;selMater=artwork" target="_blank" rel="noreferrer">
-          <div class="thumb">
-            <small>첫페이지 노출</small>
-            <strong>#20054</strong>
-          </div>
-          <div class="link-body">
-            <h3>첫페이지 작품</h3>
-            <p>사용자 전달 순서 기준 첫페이지 노출 링크</p>
-          </div>
-        </a>
-        <a class="link-card" href="https://sbsart.com/portfolio/portfolio_view.asp?txtCurPage=2&amp;txtContentSeq=20580&amp;selMater=artwork" target="_blank" rel="noreferrer">
-          <div class="thumb">
-            <small>관련 링크</small>
-            <strong>#20580</strong>
-          </div>
-          <div class="link-body">
-            <h3>관련 포트폴리오 01</h3>
-            <p>페이지 2 기준 참고 링크</p>
-          </div>
-        </a>
-        <a class="link-card" href="https://sbsart.com/portfolio/portfolio_view.asp?txtCurPage=2&amp;txtContentSeq=18042&amp;selMater=artwork" target="_blank" rel="noreferrer">
-          <div class="thumb">
-            <small>관련 링크</small>
-            <strong>#18042</strong>
-          </div>
-          <div class="link-body">
-            <h3>관련 포트폴리오 02</h3>
-            <p>페이지 2 기준 참고 링크</p>
-          </div>
-        </a>
-      </div>
-    </section>
-  </div>
+  </main>
 </body>
 </html>

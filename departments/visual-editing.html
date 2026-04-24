@@ -4,173 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>시각편집학과 포트폴리오 현황</title>
-  <style>
-    @font-face {
-      font-family: 'GmarketSans';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
-      font-weight: 300;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'GmarketSans';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-      font-weight: 500;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'GmarketSans';
-      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-      font-weight: 700;
-      font-display: swap;
-    }
-    :root {
-      --surface: rgba(255,255,255,0.84);
-      --line: rgba(21,21,21,0.1);
-      --ink: #151515;
-      --muted: #666666;
-      --accent: #3d5170;
-      --accent-soft: rgba(61,81,112,0.12);
-      --shadow: 0 22px 56px rgba(21,21,21,0.08);
-      --max: 1040px;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'GmarketSans', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at top left, rgba(61,81,112,0.14), transparent 30%),
-        linear-gradient(180deg, #f6f5f1 0%, #efede7 100%);
-    }
-    a { color: inherit; text-decoration: none; }
-    .shell { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
-    .topbar { padding: 28px 0 14px; }
-    .crumb { color: var(--muted); font-size: 0.9rem; }
-    .hero, .card, .panel {
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      background: var(--surface);
-      box-shadow: var(--shadow);
-    }
-    .hero { padding: 34px; }
-    .eyebrow {
-      display: inline-flex;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 0.8rem;
-    }
-    h1 {
-      margin: 16px 0 12px;
-      font-size: clamp(2rem, 4vw, 3.1rem);
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-    }
-    .lead { color: var(--muted); max-width: 760px; line-height: 1.7; }
-    .section { padding-top: 24px; }
-    .stats, .grid { display: grid; gap: 18px; }
-    .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .card { padding: 22px; }
-    .card span { display: block; color: var(--muted); margin-bottom: 8px; font-size: 0.9rem; }
-    .card strong { font-size: 1.7rem; letter-spacing: -0.03em; }
-    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .panel { padding: 24px; }
-    .panel h2 { margin: 0 0 12px; font-size: 1.35rem; letter-spacing: -0.03em; }
-    .panel p, .panel li { color: var(--muted); line-height: 1.7; }
-    .panel ul { margin: 0; padding-left: 18px; }
-    .badge {
-      display: inline-flex;
-      padding: 7px 12px;
-      border-radius: 999px;
-      background: rgba(61,81,112,0.08);
-      color: var(--accent);
-      font-size: 0.85rem;
-      margin-top: 10px;
-    }
-    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 0 18px;
-      border-radius: 999px;
-      background: var(--accent);
-      color: #fff;
-      font-size: 0.92rem;
-    }
-    .button.ghost { background: rgba(21,21,21,0.06); color: var(--ink); }
-    @media (max-width: 900px) {
-      .stats, .grid { grid-template-columns: 1fr; }
-      .hero { padding: 26px; }
-    }
-    @media print {
-      body { background: #fff; }
-      .hero, .card, .panel { box-shadow: none; background: #fff; }
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body>
-  <div class="shell">
-    <div class="topbar">
-      <a class="crumb" href="../index.html">메인으로 돌아가기</a>
+<body style="--accent:#3d5170; --accent-rgb:61,81,112; --accent-deep:#243448;">
+  <main class="page-shell">
+    <div class="page-frame">
+      <div class="topbar">
+        <a class="crumb" href="../index.html">메인으로 돌아가기</a>
+      </div>
+
+      <section class="sub-hero-grid">
+        <article class="hero-copy sub-hero-copy">
+          <div>
+            <div class="eyebrow">시각편집학과</div>
+            <h1>수량과 지속성이 모두 높은<br>가장 안정적인 업로드 이력</h1>
+            <p class="lead">
+              2021년 12월 23일 첫 업로드 이후 월 1개씩 업로드가 이어졌고, 2024년에는 월 2개씩 업로드가 진행되었습니다.
+              누락과 삭제 이력은 전달 내용 기준 없습니다.
+            </p>
+          </div>
+          <div class="action-row">
+            <a class="btn primary" href="#details">운영 상세 보기</a>
+            <a class="btn secondary" href="../index.html">전체 현황</a>
+          </div>
+        </article>
+
+        <aside class="sub-hero-side">
+          <div class="sub-metric">
+            <span class="stat-label">총 업로드</span>
+            <strong>48개</strong>
+          </div>
+          <div class="sub-metric">
+            <span class="stat-label">첫 업로드</span>
+            <strong>2021.12.23</strong>
+          </div>
+          <div class="sub-metric">
+            <span class="stat-label">누락</span>
+            <strong>0개</strong>
+          </div>
+          <div class="sub-metric">
+            <span class="stat-label">삭제</span>
+            <strong>0개</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="details">
+        <div class="content-grid">
+          <article class="surface-card">
+            <h2>운영 요약</h2>
+            <ul class="list">
+              <li>2021.12.23 첫 업로드 이후 월 1개씩 업로드</li>
+              <li>2024년에는 월 2개씩 업로드로 운영 강도 상승</li>
+              <li>누락 없음</li>
+              <li>삭제 없음</li>
+            </ul>
+          </article>
+          <article class="surface-card">
+            <h2>체크 포인트</h2>
+            <ul class="list">
+              <li>전체 학과 중 업로드 수량이 가장 많음</li>
+              <li>누락과 삭제 이력이 없어 운영 안정성이 높음</li>
+              <li>외부 대표 링크가 추가되면 현재 레이아웃에 바로 연결 가능</li>
+            </ul>
+          </article>
+        </div>
+      </section>
     </div>
-    <section class="hero">
-      <div class="eyebrow">시각편집학과</div>
-      <h1>수량과 지속성이 모두 높은<br>안정적인 업로드 이력</h1>
-      <p class="lead">
-        2021년 12월 23일 첫 업로드 이후 월 1개씩 업로드가 이어졌고,
-        2024년에는 월 2개씩 업로드가 진행되었습니다. 누락과 삭제 이력은 전달 내용 기준 없습니다.
-      </p>
-      <div class="actions">
-        <a class="button" href="#details">운영 상세 보기</a>
-        <a class="button ghost" href="../index.html">전체 현황 보기</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="stats">
-        <article class="card">
-          <span>총 업로드</span>
-          <strong>48개</strong>
-        </article>
-        <article class="card">
-          <span>첫 업로드</span>
-          <strong>2021.12.23</strong>
-        </article>
-        <article class="card">
-          <span>누락</span>
-          <strong>0개</strong>
-        </article>
-        <article class="card">
-          <span>삭제</span>
-          <strong>0개</strong>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="details">
-      <div class="grid">
-        <article class="panel">
-          <h2>운영 요약</h2>
-          <ul>
-            <li>2021.12.23 첫 업로드 이후 월 1개씩 업로드</li>
-            <li>2024년에는 월 2개씩 업로드로 운영 강도 상승</li>
-            <li>누락 없음</li>
-            <li>삭제 없음</li>
-          </ul>
-          <div class="badge">현황상 가장 많은 업로드 수량</div>
-        </article>
-        <article class="panel">
-          <h2>체크 포인트</h2>
-          <p>
-            제공된 외부 링크는 없지만, 업로드 수량과 누락·삭제 부재만으로도 운영 안정성이 가장 높은 케이스로 정리할 수 있습니다.
-            별도 대표작 링크가 추가되면 같은 형식의 썸네일 카드 구성이 바로 가능합니다.
-          </p>
-        </article>
-      </div>
-    </section>
-  </div>
+  </main>
 </body>
 </html>
