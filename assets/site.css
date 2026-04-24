@@ -514,6 +514,112 @@ h3 {
   text-align: center;
 }
 
+body.landing .page-shell {
+  max-height: 100vh;
+  padding: 22px 0;
+}
+
+body.landing .page-frame {
+  min-height: calc(100vh - 44px);
+  padding: 24px 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+body.landing .topbar {
+  margin-bottom: 14px;
+}
+
+body.landing .hero-grid {
+  grid-template-columns: minmax(0, 1.8fr) minmax(300px, 0.7fr);
+  gap: 16px;
+}
+
+body.landing .hero-copy,
+body.landing .hero-side,
+body.landing .surface-card,
+body.landing .nav-card {
+  border-radius: 26px;
+}
+
+body.landing .hero-copy,
+body.landing .hero-side,
+body.landing .surface-card {
+  padding: 22px;
+}
+
+body.landing .hero-copy {
+  min-height: 0;
+}
+
+body.landing .hero-side {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+body.landing .hero-stat {
+  padding: 18px;
+}
+
+body.landing h1 {
+  margin-bottom: 12px;
+  font-size: clamp(2.5rem, 2.8vw, 3.6rem);
+  line-height: 1.02;
+}
+
+body.landing .lead {
+  max-width: 760px;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+body.landing .section {
+  margin-top: 16px;
+}
+
+body.landing .section-head {
+  margin-bottom: 10px;
+}
+
+body.landing .section-note {
+  font-size: 0.88rem;
+}
+
+body.landing .summary-grid {
+  gap: 14px;
+}
+
+body.landing .metric-card {
+  min-height: 112px;
+  padding: 18px;
+}
+
+body.landing .metric-value,
+body.landing .hero-stat strong {
+  font-size: 1.8rem;
+}
+
+body.landing .nav-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+body.landing .nav-card {
+  min-height: 92px;
+  padding: 12px;
+}
+
+body.landing .nav-link {
+  min-height: 62px;
+  border-radius: 18px;
+  font-size: 0.98rem;
+}
+
+body.landing .page-footer {
+  margin-top: auto;
+  padding-top: 12px;
+  font-size: 0.82rem;
+}
+
 @media (max-width: 1400px) {
   .page-shell {
     width: min(calc(100% - 48px), 1320px);
@@ -527,6 +633,10 @@ h3 {
   .hero-copy,
   .sub-hero-copy {
     min-height: auto;
+  }
+
+  body.landing .nav-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -560,6 +670,16 @@ h3 {
   .section-head {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  body.landing .page-shell {
+    max-height: none;
+    padding: 18px 0 32px;
+  }
+
+  body.landing .page-frame {
+    min-height: auto;
+    padding: 20px;
   }
 }
 
